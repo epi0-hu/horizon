@@ -1,0 +1,18 @@
+[package]
+name = "horizon-cmc-emu"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+rust-version = "1.85"
+description = "ConsoleManiaCraft's emulator side: a libretro frontend that runs the Nintendo 64, DS and 3DS cores in software, with ROM, save and option handling. The game's crates forbid unsafe code; the FFI to the cores lives here"
+
+[dependencies]
+libloading = "0.8"
+sha1 = "0.10"
+zip = { version = "2", default-features = false, features = ["deflate"] }
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.61", features = ["Win32_Foundation", "Win32_System_Diagnostics_Debug", "Win32_System_Kernel", "Win32_System_LibraryLoader", "Win32_System_Memory"] }
+
+[lints]
+workspace = true

@@ -1224,6 +1224,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "horizon-cmc-emu"
+version = "0.1.0"
+dependencies = [
+ "libloading",
+ "sha1",
+ "windows-sys 0.61.2",
+ "zip",
+]
+
+[[package]]
 name = "horizon-command"
 version = "0.1.0"
 dependencies = [

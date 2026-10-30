@@ -4,6 +4,7 @@ members = [
     "crates/horizon-core",
     "crates/horizon-dualsense",
     "crates/horizon-threads",
+    "crates/horizon-cmc-emu",
     "crates/horizon-hdr",
     "crates/horizon-world",
     "crates/horizon-client",
